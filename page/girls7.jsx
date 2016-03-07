@@ -21,7 +21,7 @@ var Girls = React.createClass({
     var _this = this;
 
     this.pageNo = pageNo;
-    var url = '/data/imgs7/'+pageNo+'.json';
+    var url = 'data/imgs7/'+pageNo+'.json';
 
     $.getJSON(url, function(data) {
         if (data) {
