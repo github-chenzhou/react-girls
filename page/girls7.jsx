@@ -96,8 +96,8 @@ var Girls = React.createClass({
       if (!this.isLoading && offset['Y'] < 0  && Math.abs( offset['Y'] + xOffset ) > 10 ) {
         var wrapper = this.el;
         if(wrapper.scrollHeight - wrapper.clientHeight - wrapper.scrollTop < wrapper.clientHeight) {
-          this.pageNo = this.pageNo + 1;
-          this.getBooks(this.pageNo);
+          // this.pageNo = this.pageNo + 1;
+          // this.getBooks(this.pageNo);
         }
       }
     }
@@ -123,8 +123,8 @@ var Girls = React.createClass({
       var wrapper = this.el;
 
       if(wrapper.scrollHeight - wrapper.clientHeight - wrapper.scrollTop < wrapper.clientHeight) {
-        // this.pageNo = this.pageNo + 1;
-        // this.getBooks(this.pageNo);
+        this.pageNo = this.pageNo + 1;
+        this.getBooks(this.pageNo);
       }
     }
 
